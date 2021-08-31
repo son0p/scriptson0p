@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+
+#Hard Disk's names
+HD1="hardrive name 1"
+declare -a folders1=( "home" )
+
+for folder in "${folders1[@]}"
+do
+    echo "${folder}"
+    rsync -azP ~/"${folder}"/  ~/External/${HD1}/"${folder}"/
+done
+
+HD2="hardrive name 2"
+declare -a folders2=( "home" )
+
+for folder in "${folders2[@]}"
+do
+    echo "${folder}"
+    rsync -azP ~/"${folder}"/  ~/External/${HD2}/"${folder}"/
+done
+
+for folder in "${folders1[@]}"
+do
+    echo "${folder} in ${HD1}"
+done
+for folder in "${folders2[@]}"
+do
+    echo "${folder} in ${HD2} "
+done
