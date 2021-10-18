@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+## last week
+ledger -f ~/someFolder/timelog.ldg bal main -p "from last week to today"  --base --format "%a  %t\n" | sed 's/:/;/g'| sed 's/.$//g' | sed 's/main;//g' | sed  '/[!0-9]$/!d' > ~/someFolder/timeToFlame2.txt
+
+## ledger command
+##  sed 's/:/;/g'  change ledger separator ":" to flamegraph separator ";"
+##  sed 's/.$//g'  remove last char ledger time unit "s"
+##  Optional: remove my first generic account "main"
+##  sed  '/[!0-9]$/!d'  remove entries with value 0
+
+flamegraph.pl ~/someFolder/timeToFlame2.txt --colors aqua --width 1600 --height 50 --title "Last week" > /tmp/lastWeekFlamegraph.svg
