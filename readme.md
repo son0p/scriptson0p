@@ -21,4 +21,4 @@ Sript to visualize timelogs from ledger in a flamegraph.pl
 
 [ledgerTimelogToFlamegraph](https://github.com/son0p/scriptson0p/blob/main/bash/ledgerTimelogToFlamegraph)
 
-Demo: ![test.svg](test.svg)
+Sample: ![test.svg](test.svg)
