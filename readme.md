@@ -17,7 +17,8 @@ Script for backup in multiple hard disks with rsync
 
 ### Ledger to flamegraph
 
-Sript to visualize timelogs from ledger in a flamegraph.pl  
+Sript to visualize timelogs from ledger in a [flamegraph.pl]( 
+https://github.com/brendangregg/FlameGraph/blob/master/flamegraph.pl)
 
 [ledgerTimelogToFlamegraph](https://github.com/son0p/scriptson0p/blob/main/bash/ledgerTimelogToFlamegraph)
 
