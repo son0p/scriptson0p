@@ -10,7 +10,7 @@ Script for backup to multiple hard disks with rsync [documentation](bash/scriptB
 
 + [ledgerTimelogToFlamegraph](bash/ledgerTimelogToFlamegraph)
 
-Sript to visualize timelogs from [ledger-cli](https://github.com/ledger/ledger) using [flamegraph.pl]( 
+Script to visualize timelogs from [ledger-cli](https://github.com/ledger/ledger) using [flamegraph.pl]( 
 https://github.com/brendangregg/FlameGraph/blob/master/flamegraph.pl)
 
 
