@@ -1,25 +1,17 @@
-# Some scripts 
+### Some scripts 
 
-### tt 
-script for timing task in bash with leadger 
++ [tt](bash/tt)
 
-[tt script](https://github.com/jero98772/scriptson0p/blob/main/bash/tt)
+Minor changes to nuex    [t](https://github.com/nuex/t) ,  "a shell script for working with ledger's timelog format." [documentation](bash/ttDocu.md).
 
-[docuemntation of tt](https://github.com/jero98772/scriptson0p/blob/main/bash/ttDocu.md)
++ [scriptBackup](bash/scriptBackup)
 
-### scriptBackup
+Script for backup to multiple hard disks with rsync [documentation](bash/scriptBackupDocu.md)
 
-Script for backup in multiple hard disks with rsync
++ [ledgerTimelogToFlamegraph](bash/ledgerTimelogToFlamegraph)
 
-[script backup](https://github.com/jero98772/scriptson0p/blob/main/bash/scriptBackup)
-
-[documentation of ](https://github.com/jero98772/scriptson0p/blob/main/bash/scriptBackupDocu.md)
-
-### Ledger to flamegraph
-
-Sript to visualize timelogs from ledger in a [flamegraph.pl]( 
+Sript to visualize timelogs from [ledger-cli](https://github.com/ledger/ledger) using [flamegraph.pl]( 
 https://github.com/brendangregg/FlameGraph/blob/master/flamegraph.pl)
 
-[ledgerTimelogToFlamegraph](https://github.com/son0p/scriptson0p/blob/main/bash/ledgerTimelogToFlamegraph)
 
 Sample: ![test.svg](test.svg)
