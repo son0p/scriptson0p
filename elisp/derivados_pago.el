@@ -18,7 +18,7 @@ transacción"
      val (replace-regexp-in-string "\\$\\|\\,\\|\\.00" "" ledger-val) ;; convierte moneda a numero, $123,456.00  a 123456
      number-to-words (replace-regexp-in-string "	" ""
                                                (shell-command-to-string
-                                                (concat "numero_a_letras" " " val))) ;; convierte numero a letras usando script "numero_a_letras"
+                                                (concat "numero_a_palabras" " " val))) ;; convierte numero a letras usando script "numero_a_palabras"
      ledger-account "  Expenses:                       " ;; cuenta a donde ingresa
      ledger-asset "  Assets:Banco:ahorro:0609        "   ;; cuenta de donde sale
      tag1 (read-from-minibuffer "tag1: ")
